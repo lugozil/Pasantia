@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.EXTENSION_PKG_KEY = exports.EXTENSION_NAME_REGEX = exports.EXTENSION_LANGUAGES = exports.EXTENSION_PACKAGE_TYPES = exports.API_EXTENSION_PACKAGE_TYPES = exports.APP_EXTENSION_PACKAGE_TYPES = exports.EXTENSION_PACK_TYPE = exports.EXTENSION_TYPES = exports.API_EXTENSION_TYPES = exports.APP_EXTENSION_TYPES = exports.API_SHARED_DEPS = exports.APP_SHARED_DEPS = void 0;
+exports.APP_SHARED_DEPS = ['@directus/extensions-sdk', 'vue', 'vue-router', 'vue-i18n', 'pinia'];
+exports.API_SHARED_DEPS = ['directus'];
+exports.APP_EXTENSION_TYPES = ['interface', 'display', 'layout', 'module', 'panel'];
+exports.API_EXTENSION_TYPES = ['hook', 'endpoint'];
+exports.EXTENSION_TYPES = [...exports.APP_EXTENSION_TYPES, ...exports.API_EXTENSION_TYPES];
+exports.EXTENSION_PACK_TYPE = 'pack';
+exports.APP_EXTENSION_PACKAGE_TYPES = [...exports.APP_EXTENSION_TYPES, exports.EXTENSION_PACK_TYPE];
+exports.API_EXTENSION_PACKAGE_TYPES = [...exports.API_EXTENSION_TYPES, exports.EXTENSION_PACK_TYPE];
+exports.EXTENSION_PACKAGE_TYPES = [...exports.EXTENSION_TYPES, exports.EXTENSION_PACK_TYPE];
+exports.EXTENSION_LANGUAGES = ['javascript', 'typescript'];
+exports.EXTENSION_NAME_REGEX = /^(?:(?:@[^/]+\/)?directus-extension-|@directus\/extension-).+$/;
+exports.EXTENSION_PKG_KEY = 'directus:extension';

@@ -1,0 +1,1 @@
+{"version":3,"file":"get-relation-type.d.ts","sourceRoot":"","sources":["../../../src/utils/get-relation-type.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAE,MAAM,UAAU,CAAC;AAEpC,wBAAgB,eAAe,CAAC,kBAAkB,EAAE;IACnD,QAAQ,EAAE,QAAQ,CAAC;IACnB,UAAU,EAAE,MAAM,GAAG,IAAI,CAAC;IAC1B,KAAK,EAAE,MAAM,CAAC;CACd,GAAG,KAAK,GAAG,KAAK,GAAG,KAAK,GAAG,IAAI,CAuB/B"}

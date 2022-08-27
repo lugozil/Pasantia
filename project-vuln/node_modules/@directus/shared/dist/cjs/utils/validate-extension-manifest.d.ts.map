@@ -1,0 +1,1 @@
+{"version":3,"file":"validate-extension-manifest.d.ts","sourceRoot":"","sources":["../../../src/utils/validate-extension-manifest.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,iBAAiB,EAAE,oBAAoB,EAAE,MAAM,UAAU,CAAC;AAGnE,wBAAgB,yBAAyB,CACxC,iBAAiB,EAAE,oBAAoB,GACrC,iBAAiB,IAAI,iBAAiB,CAkCxC"}

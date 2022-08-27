@@ -1,0 +1,1 @@
+{"version":3,"file":"use-layout.d.ts","sourceRoot":"","sources":["../../../src/composables/use-layout.ts"],"names":[],"mappings":"AAAA,OAAO,EAA+C,GAAG,EAAY,SAAS,EAAE,WAAW,EAAE,MAAM,KAAK,CAAC;AA4FzG,wBAAgB,SAAS,CAAC,OAAO,GAAG,GAAG,EAAE,KAAK,GAAG,GAAG,EACnD,QAAQ,EAAE,GAAG,CAAC,MAAM,GAAG,IAAI,CAAC,GAC1B;IAAE,aAAa,EAAE,WAAW,CAAC,SAAS,CAAC,CAAA;CAAE,CAgB3C"}

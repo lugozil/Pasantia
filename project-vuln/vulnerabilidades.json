@@ -1,0 +1,567 @@
+{
+  "banner": {
+    "description": "WordPress Security Scanner by the WPScan Team",
+    "version": "3.8.22",
+    "authors": [
+      "@_WPScan_",
+      "@ethicalhack3r",
+      "@erwan_lr",
+      "@firefart"
+    ],
+    "sponsor": "Sponsored by Automattic - https://automattic.com/"
+  },
+  "start_time": 1652069514,
+  "start_memory": 52424704,
+  "target_url": "https://perezhilton.com/",
+  "target_ip": "104.26.0.93",
+  "effective_url": "https://perezhilton.com/",
+  "interesting_findings": [
+    {
+      "url": "https://perezhilton.com/",
+      "to_s": "Headers",
+      "type": "headers",
+      "found_by": "Headers (Passive Detection)",
+      "confidence": 100,
+      "confirmed_by": {
+
+      },
+      "references": {
+
+      },
+      "interesting_entries": [
+        "cf-ray: 708796d85c199ad1-MIA",
+        "cf-cache-status: DYNAMIC",
+        "expect-ct: max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+        "x-ntv-te: 483 c:381 a:137",
+        "x-ntv-worker-version: 1.2.7w 5/8/2022, 9:11:07 PM",
+        "report-to: {\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=Gha1fuV%2BTN1WTaYUTwrM%2BuvRKOwMK2zd7jeQ1EP4ncLE2qzslGm%2F610%2BMvhExQJoFeL6pkM7MG3RFeSyEW8%2FrTZRQlsN25RSCJJlASwAWw269Cuqq2yXysPaDlVPXXrjpQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+        "nel: {\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+        "server: cloudflare"
+      ]
+    },
+    {
+      "url": "https://perezhilton.com/robots.txt",
+      "to_s": "robots.txt found: https://perezhilton.com/robots.txt",
+      "type": "robots_txt",
+      "found_by": "Robots Txt (Aggressive Detection)",
+      "confidence": 100,
+      "confirmed_by": {
+
+      },
+      "references": {
+
+      },
+      "interesting_entries": [
+
+      ]
+    },
+    {
+      "url": "https://perezhilton.com/readme.html",
+      "to_s": "WordPress readme found: https://perezhilton.com/readme.html",
+      "type": "readme",
+      "found_by": "Direct Access (Aggressive Detection)",
+      "confidence": 100,
+      "confirmed_by": {
+
+      },
+      "references": {
+
+      },
+      "interesting_entries": [
+
+      ]
+    }
+  ],
+  "version": {
+    "number": "5.5.3",
+    "release_date": "2020-10-30",
+    "status": "insecure",
+    "found_by": "Rss Generator (Passive Detection)",
+    "confidence": 100,
+    "interesting_entries": [
+      "https://perezhilton.com/feed/, <generator>https://wordpress.org/?v=5.5.3</generator>",
+      "https://perezhilton.com/comments/feed/, <generator>https://wordpress.org/?v=5.5.3</generator>"
+    ],
+    "confirmed_by": {
+
+    },
+    "vulnerabilities": [
+      {
+        "title": "WordPress 4.7-5.7 - Authenticated Password Protected Pages Exposure",
+        "fixed_in": "5.5.4",
+        "references": {
+          "cve": [
+            "2021-29450"
+          ],
+          "url": [
+            "https://wordpress.org/news/2021/04/wordpress-5-7-1-security-and-maintenance-release/",
+            "https://blog.wpscan.com/2021/04/15/wordpress-571-security-vulnerability-release.html",
+            "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-pmmh-2f36-wvhq",
+            "https://core.trac.wordpress.org/changeset/50717/"
+          ],
+          "youtube": [
+            "https://www.youtube.com/watch?v=J2GXmxAdNWs"
+          ],
+          "wpvulndb": [
+            "6a3ec618-c79e-4b9c-9020-86b157458ac5"
+          ]
+        }
+      },
+      {
+        "title": "WordPress 3.7 to 5.7.1 - Object Injection in PHPMailer",
+        "fixed_in": "5.5.5",
+        "references": {
+          "cve": [
+            "2020-36326",
+            "2018-19296"
+          ],
+          "url": [
+            "https://github.com/WordPress/WordPress/commit/267061c9595fedd321582d14c21ec9e7da2dcf62",
+            "https://wordpress.org/news/2021/05/wordpress-5-7-2-security-release/",
+            "https://github.com/PHPMailer/PHPMailer/commit/e2e07a355ee8ff36aba21d0242c5950c56e4c6f9",
+            "https://www.wordfence.com/blog/2021/05/wordpress-5-7-2-security-release-what-you-need-to-know/"
+          ],
+          "youtube": [
+            "https://www.youtube.com/watch?v=HaW15aMzBUM"
+          ],
+          "wpvulndb": [
+            "4cd46653-4470-40ff-8aac-318bee2f998d"
+          ]
+        }
+      },
+      {
+        "title": "WordPress 5.4 to 5.8 -  Lodash Library Update",
+        "fixed_in": "5.5.6",
+        "references": {
+          "url": [
+            "https://wordpress.org/news/2021/09/wordpress-5-8-1-security-and-maintenance-release/",
+            "https://github.com/lodash/lodash/wiki/Changelog",
+            "https://github.com/WordPress/wordpress-develop/commit/fb7ecd92acef6c813c1fde6d9d24a21e02340689"
+          ],
+          "wpvulndb": [
+            "5d6789db-e320-494b-81bb-e678674f4199"
+          ]
+        }
+      },
+      {
+        "title": "WordPress 5.4 to 5.8 - Authenticated XSS in Block Editor",
+        "fixed_in": "5.5.6",
+        "references": {
+          "cve": [
+            "2021-39201"
+          ],
+          "url": [
+            "https://wordpress.org/news/2021/09/wordpress-5-8-1-security-and-maintenance-release/",
+            "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-wh69-25hr-h94v"
+          ],
+          "wpvulndb": [
+            "5b754676-20f5-4478-8fd3-6bc383145811"
+          ]
+        }
+      },
+      {
+        "title": "WordPress 5.4 to 5.8 - Data Exposure via REST API",
+        "fixed_in": "5.5.6",
+        "references": {
+          "cve": [
+            "2021-39200"
+          ],
+          "url": [
+            "https://wordpress.org/news/2021/09/wordpress-5-8-1-security-and-maintenance-release/",
+            "https://github.com/WordPress/wordpress-develop/commit/ca4765c62c65acb732b574a6761bf5fd84595706",
+            "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-m9hc-7v5q-x8q5"
+          ],
+          "wpvulndb": [
+            "38dd7e87-9a22-48e2-bab1-dc79448ecdfb"
+          ]
+        }
+      },
+      {
+        "title": "WordPress < 5.8.2 - Expired DST Root CA X3 Certificate",
+        "fixed_in": "5.5.7",
+        "references": {
+          "url": [
+            "https://wordpress.org/news/2021/11/wordpress-5-8-2-security-and-maintenance-release/",
+            "https://core.trac.wordpress.org/ticket/54207"
+          ],
+          "wpvulndb": [
+            "cc23344a-5c91-414a-91e3-c46db614da8d"
+          ]
+        }
+      },
+      {
+        "title": "WordPress < 5.8 - Plugin Confusion",
+        "fixed_in": "5.8",
+        "references": {
+          "cve": [
+            "2021-44223"
+          ],
+          "url": [
+            "https://vavkamil.cz/2021/11/25/wordpress-plugin-confusion-update-can-get-you-pwned/"
+          ],
+          "wpvulndb": [
+            "95e01006-84e4-4e95-b5d7-68ea7b5aa1a8"
+          ]
+        }
+      },
+      {
+        "title": "WordPress < 5.8.3 - SQL Injection via WP_Query",
+        "fixed_in": "5.5.8",
+        "references": {
+          "cve": [
+            "2022-21661"
+          ],
+          "url": [
+            "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-6676-cqfm-gw84",
+            "https://hackerone.com/reports/1378209"
+          ],
+          "wpvulndb": [
+            "7f768bcf-ed33-4b22-b432-d1e7f95c1317"
+          ]
+        }
+      },
+      {
+        "title": "WordPress < 5.8.3 - Author+ Stored XSS via Post Slugs",
+        "fixed_in": "5.5.8",
+        "references": {
+          "cve": [
+            "2022-21662"
+          ],
+          "url": [
+            "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-699q-3hj9-889w",
+            "https://hackerone.com/reports/425342",
+            "https://blog.sonarsource.com/wordpress-stored-xss-vulnerability"
+          ],
+          "wpvulndb": [
+            "dc6f04c2-7bf2-4a07-92b5-dd197e4d94c8"
+          ]
+        }
+      },
+      {
+        "title": "WordPress 4.1-5.8.2 - SQL Injection via WP_Meta_Query",
+        "fixed_in": "5.5.8",
+        "references": {
+          "cve": [
+            "2022-21664"
+          ],
+          "url": [
+            "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-jp3p-gw8h-6x86"
+          ],
+          "wpvulndb": [
+            "24462ac4-7959-4575-97aa-a6dcceeae722"
+          ]
+        }
+      },
+      {
+        "title": "WordPress < 5.8.3 - Super Admin Object Injection in Multisites",
+        "fixed_in": "5.5.8",
+        "references": {
+          "cve": [
+            "2022-21663"
+          ],
+          "url": [
+            "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-jmmq-m8p8-332h",
+            "https://hackerone.com/reports/541469"
+          ],
+          "wpvulndb": [
+            "008c21ab-3d7e-4d97-b6c3-db9d83f390a7"
+          ]
+        }
+      },
+      {
+        "title": "WordPress < 5.9.2 - Prototype Pollution in jQuery",
+        "fixed_in": "5.5.9",
+        "references": {
+          "url": [
+            "https://wordpress.org/news/2022/03/wordpress-5-9-2-security-maintenance-release/"
+          ],
+          "wpvulndb": [
+            "1ac912c1-5e29-41ac-8f76-a062de254c09"
+          ]
+        }
+      }
+    ]
+  },
+  "main_theme": {
+    "slug": "understrap-master",
+    "location": "https://perezhilton.com/wp-content/themes/understrap-master/",
+    "latest_version": null,
+    "last_updated": null,
+    "outdated": false,
+    "readme_url": "https://perezhilton.com/wp-content/themes/understrap-master/readme.txt",
+    "directory_listing": false,
+    "error_log_url": null,
+    "style_url": "https://perezhilton.com/wp-content/themes/understrap-master/style.css",
+    "style_name": "UnderStrap",
+    "style_uri": "https://understrap.com",
+    "description": "Combination of Automattic´s _s theme and Bootstrap 4. Made as a solid starting point for your next theme project and WordPress website. Use it as starter theme or as a parent theme. It is up to you. Including Font Awesome support, built-in widget slider and much more you need for basic websites. IMPORTANT: All developer dependencies are not bundled with this install file. Just download the .zip, extract it and run \"npm install\" and \"gulp copy-assets\" inside the extracted /understrap folder.",
+    "author": "Holger Koenemann",
+    "author_uri": "https://www.holgerkoenemann.de",
+    "template": null,
+    "license": "UnderStrap WordPress Theme, Copyright 2013-2017 Holger Koenemann",
+    "license_uri": "https://www.gnu.org/licenses/gpl-2.0.html",
+    "tags": "one-column, custom-menu, featured-images, theme-options, translation-ready",
+    "text_domain": "understrap",
+    "found_by": "Urls In Homepage (Passive Detection)",
+    "confidence": 64,
+    "interesting_entries": [
+
+    ],
+    "confirmed_by": {
+      "Urls In 404 Page (Passive Detection)": {
+        "confidence": 28,
+        "interesting_entries": [
+
+        ]
+      }
+    },
+    "vulnerabilities": [
+
+    ],
+    "version": {
+      "number": "0.9.4",
+      "confidence": 80,
+      "found_by": "Style (Passive Detection)",
+      "interesting_entries": [
+        "https://perezhilton.com/wp-content/themes/understrap-master/style.css, Match: 'Version: 0.9.4'"
+      ],
+      "confirmed_by": {
+
+      }
+    },
+    "parents": [
+
+    ]
+  },
+  "plugins": {
+    "ajax-load-more": {
+      "slug": "ajax-load-more",
+      "location": "https://perezhilton.com/wp-content/plugins/ajax-load-more/",
+      "latest_version": "5.5.2",
+      "last_updated": "2022-03-07T18:17:00.000Z",
+      "outdated": false,
+      "readme_url": null,
+      "directory_listing": null,
+      "error_log_url": null,
+      "found_by": "Urls In Homepage (Passive Detection)",
+      "confidence": 80,
+      "interesting_entries": [
+
+      ],
+      "confirmed_by": {
+
+      },
+      "vulnerabilities": [
+
+      ],
+      "version": {
+        "number": "5.5.2",
+        "confidence": 100,
+        "found_by": "Readme - Stable Tag (Aggressive Detection)",
+        "interesting_entries": [
+          "https://perezhilton.com/wp-content/plugins/ajax-load-more/README.txt"
+        ],
+        "confirmed_by": {
+          "Readme - ChangeLog Section (Aggressive Detection)": {
+            "confidence": 50,
+            "interesting_entries": [
+              "https://perezhilton.com/wp-content/plugins/ajax-load-more/README.txt"
+            ]
+          }
+        }
+      }
+    },
+    "contact-form-7": {
+      "slug": "contact-form-7",
+      "location": "https://perezhilton.com/wp-content/plugins/contact-form-7/",
+      "latest_version": "5.5.6",
+      "last_updated": "2022-02-23T09:39:00.000Z",
+      "outdated": true,
+      "readme_url": null,
+      "directory_listing": null,
+      "error_log_url": null,
+      "found_by": "Urls In Homepage (Passive Detection)",
+      "confidence": 100,
+      "interesting_entries": [
+
+      ],
+      "confirmed_by": {
+        "Urls In 404 Page (Passive Detection)": {
+          "confidence": 80,
+          "interesting_entries": [
+
+          ]
+        }
+      },
+      "vulnerabilities": [
+
+      ],
+      "version": {
+        "number": "5.4.2",
+        "confidence": 90,
+        "found_by": "Query Parameter (Passive Detection)",
+        "interesting_entries": [
+          "https://perezhilton.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4.2"
+        ],
+        "confirmed_by": {
+          "Readme - Stable Tag (Aggressive Detection)": {
+            "confidence": 80,
+            "interesting_entries": [
+              "https://perezhilton.com/wp-content/plugins/contact-form-7/readme.txt"
+            ]
+          }
+        }
+      }
+    },
+    "instagram-feed": {
+      "slug": "instagram-feed",
+      "location": "https://perezhilton.com/wp-content/plugins/instagram-feed/",
+      "latest_version": "6.0.5",
+      "last_updated": "2022-04-19T18:05:00.000Z",
+      "outdated": false,
+      "readme_url": null,
+      "directory_listing": null,
+      "error_log_url": null,
+      "found_by": "Urls In Homepage (Passive Detection)",
+      "confidence": 100,
+      "interesting_entries": [
+
+      ],
+      "confirmed_by": {
+        "Urls In 404 Page (Passive Detection)": {
+          "confidence": 80,
+          "interesting_entries": [
+
+          ]
+        }
+      },
+      "vulnerabilities": [
+
+      ],
+      "version": {
+        "number": "6.0.5",
+        "confidence": 100,
+        "found_by": "Readme - Stable Tag (Aggressive Detection)",
+        "interesting_entries": [
+          "https://perezhilton.com/wp-content/plugins/instagram-feed/README.txt"
+        ],
+        "confirmed_by": {
+          "Readme - ChangeLog Section (Aggressive Detection)": {
+            "confidence": 50,
+            "interesting_entries": [
+              "https://perezhilton.com/wp-content/plugins/instagram-feed/README.txt"
+            ]
+          }
+        }
+      }
+    },
+    "lazy-load-optimizer": {
+      "slug": "lazy-load-optimizer",
+      "location": "https://perezhilton.com/wp-content/plugins/lazy-load-optimizer/",
+      "latest_version": "1.4.7",
+      "last_updated": "2021-01-16T23:25:00.000Z",
+      "outdated": false,
+      "readme_url": null,
+      "directory_listing": null,
+      "error_log_url": null,
+      "found_by": "Urls In Homepage (Passive Detection)",
+      "confidence": 100,
+      "interesting_entries": [
+
+      ],
+      "confirmed_by": {
+        "Urls In 404 Page (Passive Detection)": {
+          "confidence": 80,
+          "interesting_entries": [
+
+          ]
+        }
+      },
+      "vulnerabilities": [
+
+      ],
+      "version": {
+        "number": "1.4.7",
+        "confidence": 100,
+        "found_by": "Query Parameter (Passive Detection)",
+        "interesting_entries": [
+          "https://perezhilton.com/wp-content/plugins/lazy-load-optimizer/assets/frontend/js/lazysizes.min.js?ver=1.4.7"
+        ],
+        "confirmed_by": {
+          "Readme - Stable Tag (Aggressive Detection)": {
+            "confidence": 80,
+            "interesting_entries": [
+              "https://perezhilton.com/wp-content/plugins/lazy-load-optimizer/readme.txt"
+            ]
+          },
+          "Readme - ChangeLog Section (Aggressive Detection)": {
+            "confidence": 50,
+            "interesting_entries": [
+              "https://perezhilton.com/wp-content/plugins/lazy-load-optimizer/readme.txt"
+            ]
+          }
+        }
+      }
+    },
+    "onesignal-free-web-push-notifications": {
+      "slug": "onesignal-free-web-push-notifications",
+      "location": "https://perezhilton.com/wp-content/plugins/onesignal-free-web-push-notifications/",
+      "latest_version": "2.2.6",
+      "last_updated": "2022-02-25T01:13:00.000Z",
+      "outdated": false,
+      "readme_url": null,
+      "directory_listing": null,
+      "error_log_url": null,
+      "found_by": "Urls In Homepage (Passive Detection)",
+      "confidence": 100,
+      "interesting_entries": [
+
+      ],
+      "confirmed_by": {
+        "Urls In 404 Page (Passive Detection)": {
+          "confidence": 80,
+          "interesting_entries": [
+
+          ]
+        }
+      },
+      "vulnerabilities": [
+
+      ],
+      "version": {
+        "number": "2.2.6",
+        "confidence": 100,
+        "found_by": "Readme - Stable Tag (Aggressive Detection)",
+        "interesting_entries": [
+          "https://perezhilton.com/wp-content/plugins/onesignal-free-web-push-notifications/readme.txt"
+        ],
+        "confirmed_by": {
+          "Readme - ChangeLog Section (Aggressive Detection)": {
+            "confidence": 50,
+            "interesting_entries": [
+              "https://perezhilton.com/wp-content/plugins/onesignal-free-web-push-notifications/readme.txt"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "config_backups": {
+
+  },
+  "vuln_api": {
+    "plan": "free",
+    "requests_done_during_scan": 7,
+    "requests_remaining": 68
+  },
+  "stop_time": 1652069701,
+  "elapsed": 186,
+  "requests_done": 187,
+  "cached_requests": 7,
+  "data_sent": 73158,
+  "data_sent_humanised": "71.443 KB",
+  "data_received": 935006,
+  "data_received_humanised": "913.092 KB",
+  "used_memory": 247828480,
+  "used_memory_humanised": "236.348 MB"
+}

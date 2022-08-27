@@ -1,0 +1,1 @@
+{"version":3,"file":"use-system.d.ts","sourceRoot":"","sources":["../../../src/composables/use-system.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,aAAa,EAAE,MAAM,OAAO,CAAC;AAEtC,OAAO,EAAE,mBAAmB,EAAE,MAAM,UAAU,CAAC;AAE/C,wBAAgB,SAAS,IAAI,MAAM,CAAC,MAAM,EAAE,GAAG,CAAC,CAM/C;AAED,wBAAgB,MAAM,IAAI,aAAa,CAMtC;AAED,wBAAgB,aAAa,IAAI,mBAAmB,CAMnD"}
